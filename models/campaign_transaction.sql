@@ -7,7 +7,7 @@
 
 with raw_transaction as (
 
-select * from {{ source('cy', 'transaction') }}
+select * from {{ source('cy', 'raw_transaction') }}
 
 
 )
