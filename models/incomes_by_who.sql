@@ -1,6 +1,6 @@
 with expense as (
     select *
-    from transaction
+    from {{ ref('transaction') }}
     where expense_amount > 0
 )
 
