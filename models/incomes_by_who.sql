@@ -1,3 +1,5 @@
+{{ config(materialized="table") }}
+
 with expense as (
     select *
     from {{ ref('transaction') }}

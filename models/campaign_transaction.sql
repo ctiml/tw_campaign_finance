@@ -42,3 +42,4 @@ strptime(cast(19110000 + "存入專戶日期"::int as varchar), '%Y%m%d')::date 
 "資料更正日期" as correction_date
 
 from raw_transaction
+where transaction_date < '2023-01-01'
