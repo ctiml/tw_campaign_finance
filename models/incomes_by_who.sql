@@ -2,7 +2,7 @@
 
 with expense as (
     select *
-    from {{ ref('transaction') }}
+    from {{ ref('campaign_transaction') }}
     where expense_amount > 0
 )
 
